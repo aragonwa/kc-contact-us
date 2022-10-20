@@ -1457,7 +1457,7 @@
             //        $(".page-header:first").append(htmlOffline);
             $(".page-header:first").append(htmlNewSite);
             $("#divCategory").append(htmlCategoryNotice);
-            // $("#kcMasterPagePlaceHolder_pnlForm .row .col-sm-5 .list-group .list-group-item:nth-child(2)").html(phoneCopy);
+            $("#kcMasterPagePlaceHolder_pnlForm .row .col-sm-5 .list-group .list-group-item:nth-child(2)").html(phoneCopy);
 
           });
         </script>
@@ -1470,9 +1470,9 @@
 
             $(document).ready(function () {
               //create var to store html for texting/sms notice
-              //var htmlTextingNotice = '<p id="textingContainer" class="list-group-item call-out-text call-out-text-success ff-off">Text our chat bot at <a href="sms:+15094368237"><strong>+1 (509) 436-8237</strong></a> to get answers to frequently asked questions.</p>';
+              var htmlTextingNotice = '<p id="textingContainer" class="list-group-item call-out-text call-out-text-success ff-off">Text our chat bot at <a href="sms:+15094368237"><strong>+1 (509) 436-8237</strong></a> to get answers to frequently asked questions.</p>';
 
-              var htmlTextingNotice = '<p id="textingContainer" class="list-group-item call-out-text call-out-text-success ff-off"><span class="badge pull-left m-r" style="color:#fff;background-color:#D67619">New</span>Text us: <a href="sms:+13605266555"><strong>360-526-6555</strong></a></p>';
+              //var htmlTextingNotice = '<p id="textingContainer" class="list-group-item call-out-text call-out-text-success ff-off"><span class="badge pull-left m-r" style="color:#fff;background-color:#D67619">New</span>Text us: <a href="sms:+13605266555"><strong>360-526-6555</strong></a></p>';
               //add texting/sms notice to DOM
               $("#kcMasterPagePlaceHolder_pnlForm").find(".list-group").first().find(".list-group-item").first().after(htmlTextingNotice);
 
